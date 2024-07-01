@@ -2,6 +2,7 @@ const express =require('express')
 const router =express.Router()
 const toursController=require('../controllers/toursController')
 
-router('/')
+router
+.route('/')
 .get(toursController.getAllTours)
 module.exports = router;
