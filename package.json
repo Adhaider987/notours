@@ -6,14 +6,16 @@
   "author": "Muhammad Adnan Haider",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "commitizen": "^4.3.0",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "yarn": "^1.22.22"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "cz":"git add . & git cz & git push"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "cz": "git add . & git cz & git push"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0"
