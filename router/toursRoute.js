@@ -10,6 +10,7 @@ router
 
 .route('/:id')
 .put(toursController.updateTour)
+.delete(toursController.deleteUser)
 
 // .post(toursController.createTours)
 module.exports = router;
