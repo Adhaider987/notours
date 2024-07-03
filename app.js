@@ -30,24 +30,7 @@ app.use(bodyParser.json());
 //     }
 //   });
 // });
-// app.post('/api/v1/tours', (req, res) => {
-//   console.log(req.body);
-//   const newId = tours.length+1;
-//   const newTour = Object.assign({id: newId}, req.body);
-//   tours.push(newTour);
-//   fs.writeFile(
-//     `${__dirname}/dev-data/data/tours.json`,
-//     JSON.stringify(tours),
-//     err => {
-//       res.status(201).json({
-//         status: 'success',
-//         data: {
-//           tour: newTour
-//         }
-//       });
-//     }
-//   );
-// });
+
 app.use('/api/v1/tours',toursRoute)
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
